@@ -12,7 +12,6 @@ app.post("/api/messages", async (req, res) => {
       headers: {
         "Content-Type": "application/json",
         "anthropic-version": "2023-06-01",
-        "anthropic-beta": "interleaved-thinking-2025-05-14",
         "x-api-key": process.env.ANTHROPIC_API_KEY,
       },
       body: JSON.stringify(req.body),
